@@ -1,0 +1,16 @@
+nav{
+    text-align: left;
+    padding: 10px 0 10px ;
+}
+
+nav > a{
+    color:rgb(0, 0, 0);
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+

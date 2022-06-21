@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+body {
+  font-family: "Open Sans", sans-serif;
+	font-family: sans-serif;
+	min-height: 100vh;
+}
+section {
+  padding: 2em 10px;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+div.form {
+  width: 100%;
+  max-width: 450px;
+  border: 2px solid rgb(41, 151, 202);
+  margin: 0 auto;
+  padding: 20px;
+}
+.input-field {
+  position: relative;
+}
+.input-field i {
+  color: rgb(0, 0, 0); 
+  margin: 0px 1rem;
+  font-size: 25px;
+  width: 25px;
+  top: -15px;
+  position: relative;
+}
+.input-field i.fa-pen {
+  top: -80px;
+  position: relative;
+}
+
+
+input, textarea {
+  margin-left: 3rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(72, 149, 179);
+  height: 3rem;
+  margin: 0 0 15px 0;
+  transition: all .3s;
+  width: 80%;
+  padding-top: 20px;
+  font-size: 16px;
+}
+textarea {
+  padding: 1.6rem 0;
+}
+label {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0.8rem;
+  left: 1.3rem;
+  cursor: text;
+  margin-left: 3rem;
+}
+.btn-block {
+  margin: 0 auto;
+  text-align: center;
+}
+.btn-block .btn {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #318ac6;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  border: none;
+  padding: 10px 35px;
+  font-size: 19px;
+  margin-top: 1em;
+  margin-bottom: 1em; 
+}
+.btn-block .btn i {
+  float: right; 
+  padding-left: 10px; 
+  font-size: 16px; 
+  padding-top: 3px;
+}
+@media (max-width: 400px) {
+  div.form {width: 90%; padding: 20px 10px;}
+  input, textarea {width: 73%;}
+  .input-field i {margin: 0px 1rem 0px 0.6rem;}
+  label {left: 0.7rem;}
+}
