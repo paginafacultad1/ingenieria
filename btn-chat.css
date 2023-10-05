@@ -1,0 +1,77 @@
+/* Estilos para el botón de chat */
+.btn-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent; /* Cambia el fondo a transparente */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.btn-chat img {
+  width: 100%;
+}
+
+/* Estilos para las ondas */
+.btn-chat::before,
+.btn-chat::after {
+  content: "";
+  position: absolute;
+  border-radius: 60%;
+  width: 80px;
+  height: 80px;
+  background-color: aqua;
+  opacity: 0;
+  animation: onda 1.7s infinite;
+}
+
+.btn-chat::before {
+  animation-delay: 0.5s;
+}
+
+.btn-chat::after {
+  animation-delay: 1s;
+}
+
+/* Animación de la onda */
+@keyframes onda {
+  0% {
+      transform: scale(0);
+      opacity: 0.5;
+  }
+  100% {
+      transform: scale(1.5);
+      opacity: 0;
+  }
+}
+
+/* Estilos para la ventana del chat */
+.chatbox {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9998;
+}
+/* Oculta la caja del chat inicialmente */
+.chatbox {
+  display: none;
+  /* Estilos adicionales */
+}
+
+/* Estilos para mostrar la caja del chat cuando está abierta */
+.chatbox.opened {
+  display: block;
+  /* Estilos adicionales */
+}
